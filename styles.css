@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+html {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size  : 15px;
+    line-height: 1.5;
+}
+
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/***** navbar *****/
+.sidenav {
+    height          : 100%;
+    width           : 300px;
+    background-color: #fff;
+    position        : fixed !important;
+    z-index         : 1;
+    overflow        : auto;
+}
+
+.leftnav {
+    position        : fixed;
+    top             : 0;
+    padding-bottom  : 0;
+    height          : 100%;
+    width           : 300px;
+    background-color: transparent;
+}
+
+.mainnav {
+    height          : 100%;
+    width           : 100%;
+    background-color: #E7E9EB;
+    padding-top     : 20px;
+}
+
+.sidenav header {
+    font-size    : 25px;
+    font-weight  : bold;
+    padding-left : 16px;
+    margin       : -4px 0 4px 0;
+    width        : 300px;
+    border-bottom: 2px solid black;
+}
+
+.sidenav a {
+    font-size      : 19px;
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding        : 6px 1px 4px 16px;
+    display        : block;
+    color          : black;
+}
+
+.sidenav a:hover,
+.sidenav a:focus {
+    background-color: #04AA6D !important;
+    color           : #ffffff !important;
+}
+
+.sidenav a:active {
+    background-color: #04AA6D !important;
+    color           : #ffffff !important;
+}
+
+/***** End navbar *****/
+
+/***** main *****/
+#main-doc {
+    margin-left: 300px;
+    padding    : 15px 50px 32px 32px;
+    max-height : 100%;
+}
+
+#main-doc p,
+#main-doc ul {
+    text-align: justify;
+}
+
+.main-section {
+    margin-bottom: 70px;
+}
+
+code {
+    width           : auto;
+    padding         : 8px 12px;
+    border-left     : 4px solid #04AA6D;
+    word-wrap       : normal;
+    background-color: #E7E9EB;
+    display         : block;
+    text-align      : left;
+    white-space     : pre-line;
+    position        : relative;
+    word-break      : normal;
+    word-wrap       : normal;
+}
+
+/***** End main *****/
+/***** mediaQuery *****/
+@media (min-width: 993px) {
+    .sidenav {
+        display: block !important;
+    }
+}
+
+/***** End mediaQuery *****/
